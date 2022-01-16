@@ -52,10 +52,11 @@ a {
 }
 
 .testText {
-  width: 800px;
+  width: 700px;
   margin: 30px auto;
   font-family: monospace;
   font-size: 30px;
-  color: rgb(71, 38, 5);
+  line-height: 1.5em;
+  color: rgb(58, 38, 5);
   text-align: justify;
 }
