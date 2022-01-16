@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inconsolata:wght@600&family=Vujahday+Script&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./Images/wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: "Vujahday Script", cursive;
+  font-size: 150px;
+  color: rgb(71, 38, 5);
+  text-align: center;
+  padding-top: 70px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  /*border: 3px solid black;*/
+  justify-content: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.navTextContainer {
+  font-family: "Vujahday Script", cursive;
+  font-size: 38px;
+  font-weight: bolder;
+  color: rgb(71, 38, 5);
+  text-align: center;
+  padding: 0;
+  /*border: 3px solid black;*/
+  width: fit-content;
+  height: 50px;
+  margin: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navTextContainer:hover {
+  color: #ffdd99;
+}
+
+.testText {
+  width: 800px;
+  margin: 0 auto;
+  font-family: monospace;
+  font-size: 30px;
+  color: rgb(71, 38, 5);
+  text-align: justify;
+}
