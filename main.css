@@ -91,3 +91,8 @@ a:hover{
 .textSubContainer:hover {
   color: #ffdd99;
 }
+
+footer {
+  position: absolute;
+  bottom: 10px;
+}
