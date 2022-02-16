@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inconsolata:wght@600&family=Vujahday+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-family: 'Special Elite', "Vujahday Script", cursive;
+  font-size: 150px;
+  color: rgb(71, 38, 5);
+  text-align: center;
+  padding-top: 70px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  /*border: 3px solid black;*/
+  justify-content: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.navTextContainer {
+  font-family: 'Special Elite', "Vujahday Script", cursive;
+  font-size: 38px;
+  font-weight: bolder;
+  color: rgb(71, 38, 5);
+  text-align: center;
+  padding: 0;
+  /*border: 3px solid black;*/
+  width: fit-content;
+  height: 50px;
+  margin: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navTextContainer:hover {
+  color: #ffdd99;
+}
+
+.testText {
+  background-color: #ccb68b;
+  width: 880px;
+  margin: 30px auto;
+  font-family: 'Special Elite', monospace;
+  font-size: 22px;
+  line-height: 1.5em;
+  color: rgb(71, 38, 5);
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 25px;
+}
+
+.photoFlex {
+  display: flex;
+  justify-content: center;
+}
+.alexPhoto {
+  width:500px;
+  height: 750px;
+}
+footer {
+  color: #ffdd99;
+  font-family: 'Special Elite', monospace;
+}
