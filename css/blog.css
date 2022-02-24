@@ -44,15 +44,14 @@ h1 {
 
 .navTextContainer {
   font-family: 'Special Elite', "Vujahday Script", cursive;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: bolder;
   color: rgb(71, 38, 5);
   text-align: center;
-  padding: 0;
+  padding: 0px 15px 15px 0px;
   /*border: 3px solid black;*/
   width: fit-content;
-  height: 50px;
-  margin: 0 20px;
+  line-height: 3rem;
 }
 
 a {
@@ -197,7 +196,7 @@ footer {
   }
   
   .navTextContainer {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
   
   .testText {
@@ -235,6 +234,10 @@ footer {
     transform: skewX(-3deg);
   }
 
+  .postData p {
+    margin-left:10px;
+  }
+
   .testText h2 {
     font-size: 3rem;
   }
@@ -267,5 +270,6 @@ footer {
   }
   .navTextContainer {
     font-size: 4rem;
+    padding-left: 2rem;
   }
 }

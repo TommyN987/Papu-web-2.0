@@ -99,7 +99,9 @@ footer {
     width: 100%;
   }
   .navTextContainer {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    height: 100%;
   }
   .testText {
     width: 100%;
@@ -128,5 +130,11 @@ footer {
   }
   body {
     height: 100vh;
+  }
+  h1 {
+    font-size: 10rem;
+  }
+  .navContainer {
+    margin: 24px 0px;
   }
 }
