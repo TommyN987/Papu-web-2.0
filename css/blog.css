@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inconsolata:wght@600&family=Vujahday+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding:0;
+}
+
+/* :root {
+  --gradient-color: linear-gradient(to right bottom, rgba(255, 221, 153, .8),rgba(231, 212, 172, 0.8));
+} */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: url(../img/wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'Special Elite', "Vujahday Script", cursive;
+  font-size: 10rem;
+  color: rgb(71, 38, 5);
+  text-align: center;
+  padding-top: 70px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  /*border: 3px solid black;*/
+  justify-content: center;
+  margin: 24px 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 4px;
+}
+
+.navTextContainer {
+  font-family: 'Special Elite', "Vujahday Script", cursive;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgb(71, 38, 5);
+  text-align: center;
+  padding: 0;
+  /*border: 3px solid black;*/
+  width: fit-content;
+  height: 50px;
+  margin: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navTextContainer:hover {
+  color: rgb(255, 221, 153);
+}
+
+.testText {
+  background-color: #ccb68b;
+  width: 100%;
+  margin: 30px auto;
+  font-family: 'Special Elite', monospace;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: rgb(71, 38, 5);
+  text-align: justify;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+footer {
+  color: #ffdd99;
+  font-family: 'Special Elite', monospace;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(204, 182, 139);
+  border: 2px solid rgb(71, 38, 5);
+  border-radius: 8px;
+  box-shadow: 2px 0.8rem 1rem rgba(0,0,0,.05);
+}
+
+.imageData {
+  height: 25rem;
+  position:relative;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  transition: transform 5s;
+  border-radius: 8px;
+}
+
+#blogImage1 {
+  background: url(../img/typewriter.jpg) center no-repeat;
+}
+
+#blogImage2 {
+  background: url(../img/blog2-image.jpg) center no-repeat;
+}
+
+.card:hover .backgroundImage {
+  transform: scale(1.5);
+}
+
+.postData {
+  background-color: #ccb68b;
+  padding: 2rem 3rem;
+  position: relative;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgb(71, 38, 5);
+  margin: 1rem 0 1.5rem 0;
+}
+
+.description {
+  position: relative;
+}
+
+.description::first-letter {
+  margin-left: 1rem;
+}
+
+.description::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5rem;
+  height: 1.3rem;
+  background-color: rgb(71, 38, 5);
+  border-radius: 2rem;
+}
+
+.cta {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.cta a {
+  background-color: rgb(71, 38, 5);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.cta a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  width: 100%;
+  height: 3px;
+  background: rgb(71, 38, 5);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s;
+}
+
+.cta a:hover::before {
+  transform: scaleX(1);
+}
+
+@media screen and (min-width: 720px) {
+  body {
+    height: 100%;
+  }
+  
+  .navTextContainer {
+    font-size: 2.8rem;
+  }
+  
+  .testText {
+    width: 85vw;
+  }
+  
+  .card {
+    flex-direction: row;
+    width: 90%;
+    max-height: 75rem;
+    margin-left: 25px;
+  }
+
+  .imageData {
+    flex-basis: 40%;
+    height: unset;
+  }
+
+  .postData {
+    flex-basis: 60%;
+    padding: 25px 10px 10px 25px;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+  }
+
+  .postData::before {
+    content: '';
+    width: 3.5rem;
+    height: 100%;
+    background-color: #ccb68b;
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+    z-index: 10;
+    transform: skewX(-3deg);
+  }
+
+  .testText h2 {
+    font-size: 3rem;
+  }
+  .testText p {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .testText {
+    width: 70vw;
+  }
+  body {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .testText {
+    width: 50vw;
+  }
+
+  .card {
+    width: 85%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 16rem;
+  }
+  .navTextContainer {
+    font-size: 4rem;
+  }
+}

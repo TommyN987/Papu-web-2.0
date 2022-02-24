@@ -1,99 +1,170 @@
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inconsolata:wght@600&family=Vujahday+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inconsolata:wght@600&family=Vujahday+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 * {
-  margin: 0;
-  box-sizing: border-box;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
-  background-image: url(../img/wallpaper.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+	background-image: url(../img/wallpaper.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h1 {
-  font-family: 'Special Elite', "Vujahday Script", cursive;
-  font-size: 150px;
-  color: rgb(71, 38, 5);
-  text-align: center;
-  padding-top: 150px;
+	font-family: 'Special Elite', 'Vujahday Script', cursive;
+	font-size: 160px;
+	color: rgb(71, 38, 5);
+	text-align: center;
+	padding-top: 150px;
 }
 
-/*h1:hover{
-  color: #ffdd99;
-}*/
-
-footer{
-  font-family: monospace;
-  color: rgb(71, 38, 5);
-  font-size: 20px;
-  margin: 10px 30px;
-  /*border: 3px solid black;*/
+footer {
+	font-family: monospace;
+	color: rgb(71, 38, 5);
+	font-size: 20px;
+	margin: 10px 30px;
+	/*border: 3px solid black;*/
 }
 
 .menuIcon {
-  border-radius: 50%;
-  width: 200px;
+	border-radius: 50%;
+	width: 100%;
 }
 
-.menuIcon:hover{
-  width: 250px;
-  margin: 0 -20px;
+.menuIcon:hover {
+	width: 120%;
+	margin: 0 -20px;
 }
 
 .flexContainer {
-  display: flex;
-  /*border: 3px solid black;*/
-  justify-content: center;
-  margin: 30px 0;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding: 5px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  margin-top: -180px;
 }
 
 .textSubContainer {
-  font-family: 'Special Elite',"Vujahday Script", cursive;
-  font-size: 37px;
-  font-weight: bolder;
-  color: rgb(71, 38, 5);
-  text-align: center;
-  padding: 0;
-  /*border: 3px solid black;*/
-  width: 210px;
-  height: 50px;
+	font-family: 'Special Elite', 'Vujahday Script', cursive;
+	font-size: 2.3rem;
+	font-weight: bolder;
+	color: rgb(71, 38, 5);
+	text-align: center;
+	padding: 0;
+	width: 100%;
+	height: 50px;
 }
 
 .alexContainer,
 .konyvContainer,
 .blogContainer,
 .kontaktContainer {
-  display: flex;
-  flex-direction: column;
-  margin: 5px;
-  /*border: 3px solid black;*/
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+  width: 250px;
+	/*border: 3px solid black;*/
 }
 
 .iconSubContainer {
-  width: 210px;
-  height: 210px;
-  margin: 10px 0;
+	width: 100%;
+	height: 100%;
+	margin: 10px 0;
 }
 
-a{
-  text-decoration: none;
-  color: rgb(71, 38, 5);
+a {
+	text-decoration: none;
+	color: rgb(71, 38, 5);
 }
 
-a:hover{
-  color: #ffdd99;
+a:hover {
+	color: #ffdd99;
 }
 
 .textSubContainer:hover {
-  color: #ffdd99;
+	color: #ffdd99;
 }
 
 footer {
-  position: absolute;
-  bottom: 10px;
+	bottom: 10px;
+}
+
+@media screen and (max-width: 720px) {
+	body {
+    height: 100%;
+  }
+  
+  h1 {
+		font-size: 7rem;
+		margin-top: -80px;
+	}
+
+  .flexContainer {
+    margin-top: 50px;
+    height: 100%;
+  }
+	.textSubContainer {
+		font-size: 1.9rem;
+	}
+	.alexContainer,
+	.konyvContainer,
+	.blogContainer,
+	.kontaktContainer {
+		margin-bottom: 45px;
+    height: 100%;
+		/*border: 3px solid black;*/
+	}
+}
+
+@media screen and (max-width: 960px) {
+  .alexContainer,
+	.konyvContainer,
+	.blogContainer,
+	.kontaktContainer {
+    width: 280px;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  .textSubContainer {
+    width: 100%;
+  }
+  header {
+    margin-top: -60px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    height: 100%;
+  }
+  h1 {
+    margin-top: 10px;
+    margin-bottom: -100px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header {
+    margin-top: -60px;
+    margin-bottom: 100px;
+  }
+
+}
+@media screen and (max-width: 720px) {
+  h1 {
+    margin-top: 0px;
+    margin-bottom: -100px;
+  }
+  body {
+    height: 100%;
+  }
 }
