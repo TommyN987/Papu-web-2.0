@@ -1,0 +1,5 @@
+#!/bin/zsh -fx
+mkdir -p remote
+curlftpfs ftpx.forpsi.com ./remote/ -o user=${FTP_USER:?provide ftp user}:${FTP_PASS:?provide ftp password}
+find css/ img/ fonts/ *.html -type f | while read -r f; do rm remote/$f; cp $f remote/$f; done
+fusermount -u remote
