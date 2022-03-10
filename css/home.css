@@ -88,9 +88,15 @@ footer {
   font-size: 2.5rem;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 545px) {
   body {
     height: 100vh;
+  }
+}
+
+@media screen and (max-height: 770px) {
+  body {
+    height: 100%;
   }
 }
 
