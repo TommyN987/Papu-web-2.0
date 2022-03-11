@@ -94,7 +94,7 @@ footer {
   }
 }
 
-@media screen and (max-height: 770px) {
+@media screen and (max-height: 670px) {
   body {
     height: 100%;
   }
