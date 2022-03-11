@@ -102,6 +102,6 @@ footer {
 
 @media screen and (min-width: 1135px) {
   header {
-    margin-bottom: -15rem;
+    margin-bottom: max(0, -15rem);
   }
 }
