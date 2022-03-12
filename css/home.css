@@ -32,7 +32,8 @@ body {
 }
 
 header {
-  margin-top: clamp(5rem, 10vw, 11rem);
+  margin-top: clamp(2rem, 10%, 18rem);
+  margin-bottom: clamp(1rem, 5%, 5rem);
 }
 
 h1 {
@@ -45,8 +46,6 @@ h1 {
   justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
 }
 
 .nav-container {
@@ -97,11 +96,5 @@ footer {
 @media screen and (max-height: 670px) {
   body {
     height: 100%;
-  }
-}
-
-@media screen and (min-width: 1135px) {
-  header {
-    margin-bottom: max(0, -15rem);
   }
 }
