@@ -1,5 +1,5 @@
 #!/bin/zsh -fx
 mkdir -p remote
 curlftpfs ftpx.forpsi.com ./remote/ -o user=${FTP_USER:?provide ftp user}:${FTP_PASS:?provide ftp password}
-find css/ img/ fonts/ *.html *.js -type f | cpio -pvd remote/www
+find css/ img/ fonts/ *.html *.js .htaccess -type f | cpio -pvd remote/www
 fusermount -u remote

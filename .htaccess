@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off [NC]
+RewriteRule (.*) https://www.nagyalex.hu%{REQUEST_URI} [L,R=301,QSA]
